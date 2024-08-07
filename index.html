@@ -97,43 +97,9 @@
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                 <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - EPUB Viewer-->
-                            <div id="viewer" style="height: 600px;"></div>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
-                            <script>
-                                const EPubViewer = ({ url }) => {
-                                    const book = Epub(url);
-                                    const rendition = book.renderTo('area', { method: 'default' });
-                                    const displayed = rendition.display();
-                                    return (
-                                        <>
-                                            <div>
-                                                <button onClick={() => rendition.prev()}>
-                                                    이전 페이지
-                                                </button>
-                                                <button onClick={() => rendition.next()}>
-                                                    다음 페이지
-                                                </button>
-                                            </div>
-                                            <div id="area"></div>
-                                        </>
-                                    );
-                                };
-
-                                const EPubsPage = () => {
-                                    const epubFile = 'assets/epub/first.epub'; // public 폴더에 있는 EPUB 파일 경로
-                                    return (
-                                        <div>
-                                            <EPubViewer url={https://drive.google.com/file/d/1UiKHICsKANAFH4Ndy115JLONJ6qgc10e/view?usp=sharing} />
-                                        </div>
-                                    );
-                                };
-
-                                EPubsPage(); // 컴포넌트 호출 (React에서는 실제로 이 부분은 렌더링 방식과 다름)
-                            </script>
+                            </div> 
                             <!-- Portfolio Modal - Text-->
-                            <p class="mb-4"></p>
+                            <p class="mb-4"><a href="https://2024gwangnam3-1.github.io/2024gwangnam3-1ebook.github.io/">전자책 페이지</a></p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                                 <i class="fas fa-xmark fa-fw"></i>
                                 Close Window
